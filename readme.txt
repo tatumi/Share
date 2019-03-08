@@ -1,34 +1,34 @@
-exe�t�@�C����shooting_game�̒���shooting.exe�ł��D
-���s����ƁC�Q�[�����n�܂�܂��D
+exeファイルはshooting_gameの中のshooting.exeです．
+実行すると，ゲームが始まります．
 
-Unity�v���W�F�N�g��ShootingGame2016�Ƃ����t�H���_�ł�
+UnityプロジェクトはShootingGame2016というフォルダです
 
-���̃Q�[���̓w�b�h�}�E���g�f�B�X�v���C�ƃW���C�X�e�B�b�N�R���g���[���[���g���ėV�ԃQ�[���ł����C
-�L�[�{�[�h�ł��V�ׂ�悤�ɂȂ��Ă��܂��D(���������쐫��Տꊴ�͗��܂��D)
+このゲームはヘッドマウントディスプレイとジョイスティックコントローラーを使って遊ぶゲームですが，
+キーボードでも遊べるようになっています．(ただし操作性や臨場感は劣ります．)
 
 
-�Q�[���̊T�v
-���̃Q�[���͐퓬�@�𑀍삵�Ĕ򗈂���G��e�ۂœ|���C���ԓ��ɂǂꂾ���̓G��|�������������Q�[���ł��D
-�v���C���[�͎��ۂɃR�b�N�s�b�g�ɍ����Ă���悤�Ȏ��_�Ńv���C���C(VR�EHMD��������)���ۂɎ��ӂ����񂵂ēG��T�����Ƃ��ł��܂��D
-�t�B�[���h�͗��̓I�ȍ��ɂȂ��Ă���C�@�̂ɗ��̓I�ȓ����������邽�߂ɁC�W���C�X�e�B�b�N�R���g���[���[�Ƃ�������3����R���g���[���[���g�p���܂��D
-�L�[�{�[�h���쎞��WSAD�L�[�ƕ����L�[���E�ő�p���܂��D
-���[�h�͓��ނ���C���̋�Ԃ����R�ɔ�щ���ēG��|��3D���[�h�ƁC�G�����ʏ�ɂ����o�������C���@�̑�������E�ړ��Ə㉺��]�Ɍ����Ă���2D���[�h�ł��D
+ゲームの概要
+このゲームは戦闘機を操作して飛来する敵を弾丸で倒し，時間内にどれだけの敵を倒せたかを競うゲームです．
+プレイヤーは実際にコックピットに座っているような視点でプレイし，(VR・HMD装着時は)実際に周辺を見回して敵を探すことができます．
+フィールドは立体的な作りになっており，機体に立体的な動きをさせるために，ジョイスティックコントローラーという軸が3つあるコントローラーを使用します．
+キーボード操作時はWSADキーと方向キー左右で代用します．
+モードは二種類あり，立体空間を自由に飛び回って敵を倒す3Dモードと，敵が平面上にしか出現せず，自機の操作も左右移動と上下回転に限られている2Dモードです．
 
-�Q�[���̑�����@(�L�[�{�[�h)
+ゲームの操作方法(キーボード)
 
-�E���C�����j���[
-�J�[�\���ړ�		W�ES�L�[
-����				Space�L�[
+・メインメニュー
+カーソル移動		W・Sキー
+決定				Spaceキー
 
-�E3D���[�h
-YAW����]			�����L�[�@���E�E
-ROLL����]			A�ED�L�[
-PITCH����]			W�ES�L�[
-�e���ˁ@			Space�L�[
+・3Dモード
+YAW軸回転			A・Dキー
+ROLL軸回転			方向キー　左・右
+PITCH軸回転			W・Sキー
+弾発射　			Spaceキー
 
-�E2D���[�h
-���ړ�				A�ED�L�[
-PITCH����]			W�ES�L�[
-�e����				Space�L�[
+・2Dモード
+横移動				A・Dキー
+PITCH軸回転			W・Sキー
+弾発射				Spaceキー
 
 
