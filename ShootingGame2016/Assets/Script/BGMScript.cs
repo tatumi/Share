@@ -19,7 +19,6 @@ public class BGMScript : MonoBehaviour {
     		//このスクリプトが付いているオブジェクトのAudioSouceを取得
     		audioSource = gameObject.GetComponent<AudioSource>();
     	    
-    	    //BadAppleだけ3分しかないので3分未満の時はBadAppleを含まない
     	    int b;
     	    if(OpeningMenu.getMinite()<=3){
     	    	b=1;
@@ -28,6 +27,7 @@ public class BGMScript : MonoBehaviour {
     	    }
     	    int a = Random.Range(1,4+b);
     	    
+        /*
     	    //ランダムで4曲のうちどれかが鳴る(3分未満の時は3曲)
     	    if(a==1){
     	    	audioSource.clip = necro;
@@ -38,7 +38,7 @@ public class BGMScript : MonoBehaviour {
     	    }else if(a==4){
     	    	audioSource.clip = badapple;
     	    }
-    	    
+    	*/
     	    audioSource.Play ();
    	}
 	

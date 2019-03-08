@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShootingGame2016", "Assembly-CSharp.csproj", "{8EF72BF4-05FC-4042-099E-FD2B8B386493}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{8EF72BF4-05FC-4042-099E-FD2B8B386493}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShootingGame2016", "Assembly-CSharp-Editor.csproj", "{AA64D35D-85AC-3A37-4407-E10D4EDB398E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{AA64D35D-85AC-3A37-4407-E10D4EDB398E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
