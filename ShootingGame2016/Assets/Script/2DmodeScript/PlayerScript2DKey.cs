@@ -7,45 +7,52 @@ using System.Collections;
 
 public class PlayerScript2DKey : MonoBehaviour {
 
-	//スコアを格納する変数
-	public float score;
-	void Start () {
-		//スコアを初期化
-		score = 0;
-	}
+    public Vector3 place;
+    //スコアを格納する変数
+    public float score;
+    void Start()
+    {
+        place = transform.position; //今の位置
+        score = 0;              //スコアを初期化
+    }
 
 
-	void Update () {
+    void Update () {
 	
 		//キーボードの入力を受けとる
-		float x = Input.GetAxis("Horizontal");
+		float x = Input.GetAxis("RightLeft");
 		float z = Input.GetAxis("Vertical");
-		
-		//平行移動(左右)
-		transform.Translate(-x*0.8f, 0, 0, Space.Self);
-		
-		//期待を傾ける限界の角度
-		float axis_angle = 60;
+
+        //平行移動(左右)
+        if (x > 0 && place.x >= -180)
+        {
+            transform.Translate(-1f, 0, 0, Space.Self);
+        } else if (x < 0 && place.x <= 180) {
+            transform.Translate(1f, 0, 0, Space.Self);
+
+        }
+        //機体を傾ける限界の角度
+        float axis_angle = 60;
 		
 		//軸との角度
 		float angle_z = Vector3.Angle(transform.forward,Vector3.up);
 
         //デバッグ用
-        Debug.Log("z="+z+"\naxis="+angle_z);
+        //Debug.Log("z="+z+"\naxis="+angle_z);
 
         //機体を上下に傾ける
         if (z > 0 && 90+axis_angle > angle_z) {//上方向
 
-            transform.RotateAround(transform.position, transform.right, 1f);
+            transform.RotateAround(transform.position, transform.right, 1.1f);
             
         }
         else if (z < 0 && 90-axis_angle < angle_z){//下方向
 
-            transform.RotateAround(transform.position, transform.right, -1f);
+            transform.RotateAround(transform.position, transform.right, -1.1f);
 
         }
 
-
+        place = transform.position; //現在位置の更新
 
 
 

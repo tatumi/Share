@@ -7,12 +7,13 @@ using System.Collections;
 
 public class PlayerScript2D : MonoBehaviour {
 
-	//スコアを格納する変数
-	public float score;
+    public Vector3 place;
+    //スコアを格納する変数
+    public float score;
 	void Start () {
-		//スコアを初期化
-		score = 0;
-	}
+        place = transform.position;	//今の位置
+		score = 0;              //スコアを初期化
+    }
 
 
 	void Update () {
@@ -49,6 +50,7 @@ public class PlayerScript2D : MonoBehaviour {
 			transform.RotateAround(transform.position,transform.right,1f);
 		}
 
+        place = transform.position; //現在位置の更新
 
         //以下デバッグ用
         /*
@@ -74,5 +76,5 @@ public class PlayerScript2D : MonoBehaviour {
 	
 		}	
 	    */
-	}
+    }
 }

@@ -12,8 +12,8 @@ public class GameoverScript : MonoBehaviour {
 
 
 	void Update () {
-		//Sが押されるとメインメニューに戻る
-		if(Input.GetKeyDown(KeyCode.S)){
+		//Rが押されるとメインメニューに戻る
+		if(Input.GetKeyDown(KeyCode.R)){
 			Application.LoadLevel("Main");
 		}
 	
@@ -29,7 +29,7 @@ public class GameoverScript : MonoBehaviour {
 		//文字表示
 		GUI.Label(new Rect(120,0,100,100), "GameOver",style);
 		GUI.Label(new Rect(120,50,100,100), "Score\n"+sc,style2);
-		GUI.Label(new Rect(60,140,100,100), "S button to opening menu",style3);
+		GUI.Label(new Rect(60,140,100,100), "R button to opening menu",style3);
 		
 	}
 	

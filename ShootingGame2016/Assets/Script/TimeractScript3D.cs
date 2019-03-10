@@ -40,13 +40,13 @@ public class TimeractScript3D : MonoBehaviour {
 		txt.text = "0"+minite.ToString()+":"+str+((int)second).ToString();
 		
 		if(second<=0&&minite<=0){
-	//		this.textSave((plIns.score).ToString());
+			textSave((plIns.score).ToString());
 			Application.LoadLevel("Gameover");
 		}
 	}
 	
 	public void textSave(string txt){
-		StreamWriter sw = new StreamWriter("C:/Users/Katen/Documents/CopyShooting/ScoreData.txt",true); //true=追記 false=上書き
+		StreamWriter sw = new StreamWriter("ScoreData.txt",true); //true=追記 false=上書き
 		sw.WriteLine(txt);
 		sw.Flush();
 		sw.Close();

@@ -10,7 +10,7 @@ public class TimeractScript : MonoBehaviour {
 
 	//PlayerScript2Dのインスタンス取得のための変数
 	private GameObject playerObj;
-	private PlayerScript2D plIns;
+	private PlayerScript2DKey plIns;
 	
 	//Timer
 	public TextMesh txt;
@@ -23,7 +23,7 @@ public class TimeractScript : MonoBehaviour {
 	void Start () {
 		//PlayerScript2Dのインスタンスの取得
 		playerObj = GameObject.Find("Player");
-		plIns = playerObj.GetComponent<PlayerScript2D>();
+		plIns = playerObj.GetComponent<PlayerScript2DKey>();
 		
 		//miniteをOpeningMenuのminiteで初期化
 		minite = OpeningMenu.getMinite();
@@ -55,14 +55,14 @@ public class TimeractScript : MonoBehaviour {
 		
 		//修了判定
 		if(second<=0&&minite<=0){
-			this.textSave((plIns.score).ToString());
+			textSave((plIns.score).ToString());
 			Application.LoadLevel("Gameover");
 		}
 	}
 	
 	//現在のスコアをテキストファイルの最終行に追加するメソッド
 	public void textSave(string txt){
-		StreamWriter sw = new StreamWriter("C:/Users/Katen/Documents/CopyShooting/ScoreData.txt",true); //true=追記 false=上書き
+		StreamWriter sw = new StreamWriter("ScoreData.txt",true); //true=追記 false=上書き
 		sw.WriteLine(txt);
 		sw.Flush();
 		sw.Close();
